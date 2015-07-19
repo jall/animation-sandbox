@@ -1,4 +1,5 @@
-requirejs.config({
+/*global require*/
+require.config({
   baseUrl: "js/lib",
   paths: {
     "fragment": "../shaders/fragment",
@@ -7,4 +8,4 @@ requirejs.config({
   }
 });
 
-requirejs(['three', 'app/app']);
+require(['app/app']);

@@ -24,6 +24,12 @@ define(['three'], function moduleDefinition() {
     });
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(60, w / h, 0.01, 1000);
+
+    window.addEventListener('resize', function windowResizeCallback() {
+      renderer.setSize( window.innerWidth, window.innerHeight );
+      camera.aspect	= window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+    }, false);
   }
 
   function populateScene() {

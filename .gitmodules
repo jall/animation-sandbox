@@ -1,3 +1,6 @@
 [submodule "mrdoob-three.js"]
 	path = mrdoob-three.js
 	url = https://github.com/mrdoob/three.js/
+[submodule "udacity/cs291"]
+	path = udacity/cs291
+	url = https://github.com/udacity/cs291
